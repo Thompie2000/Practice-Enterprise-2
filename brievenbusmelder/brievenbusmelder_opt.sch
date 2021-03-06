@@ -1,0 +1,225 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L lichtsensor:OPT3002DNPR U1
+U 1 1 602CF3A3
+P 2450 3500
+F 0 "U1" H 3200 3765 50  0000 C CNN
+F 1 "OPT3002DNPR" H 3200 3674 50  0000 C CNN
+F 2 "lichtsensor:OPT3002DNPR" H 3800 3600 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/opt3002" H 3800 3500 50  0001 L CNN
+F 4 "OPT3002 Light to Digital Sensor" H 3800 3400 50  0001 L CNN "Description"
+F 5 "0" H 3800 3300 50  0001 L CNN "Height"
+F 6 "595-OPT3002DNPR" H 3800 3200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/OPT3002DNPR/?qs=zEmsApcVOkVoSH%252BnV0sVSQ%3D%3D" H 3800 3100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 3800 3000 50  0001 L CNN "Manufacturer_Name"
+F 9 "OPT3002DNPR" H 3800 2900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 602D2C13
+P 1750 3800
+F 0 "C1" H 1865 3846 50  0000 L CNN
+F 1 "100nF" H 1865 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1788 3650 50  0001 C CNN
+F 3 "~" H 1750 3800 50  0001 C CNN
+	1    1750 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 602D36EA
+P 4850 3000
+F 0 "R3" H 4920 3046 50  0000 L CNN
+F 1 "10k" H 4920 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4780 3000 50  0001 C CNN
+F 3 "~" H 4850 3000 50  0001 C CNN
+	1    4850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 602D4E83
+P 4150 3000
+F 0 "R1" H 4220 3046 50  0000 L CNN
+F 1 "10k" H 4220 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 3000 50  0001 C CNN
+F 3 "~" H 4150 3000 50  0001 C CNN
+	1    4150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 602D4F8A
+P 4500 3000
+F 0 "R2" H 4570 3046 50  0000 L CNN
+F 1 "10k" H 4570 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4430 3000 50  0001 C CNN
+F 3 "~" H 4500 3000 50  0001 C CNN
+	1    4500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3150 4150 3400
+Wire Wire Line
+	4150 3500 3950 3500
+Wire Wire Line
+	4500 3150 4500 3350
+Wire Wire Line
+	4500 3600 3950 3600
+Wire Wire Line
+	2400 3500 2450 3500
+Wire Wire Line
+	4500 2850 4150 2850
+Wire Wire Line
+	4850 2850 4500 2850
+Connection ~ 4500 2850
+Wire Wire Line
+	4850 3150 4850 3300
+Wire Wire Line
+	4850 4050 2450 4050
+Wire Wire Line
+	2450 4050 2450 3800
+$Comp
+L power:GND #PWR0101
+U 1 1 602DCC70
+P 4050 3800
+F 0 "#PWR0101" H 4050 3550 50  0001 C CNN
+F 1 "GND" H 4055 3627 50  0000 C CNN
+F 2 "" H 4050 3800 50  0001 C CNN
+F 3 "" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3700 4050 3700
+Wire Wire Line
+	4050 3700 4050 3800
+Connection ~ 2400 3500
+$Comp
+L power:GND #PWR0102
+U 1 1 602DDFE2
+P 2350 3700
+F 0 "#PWR0102" H 2350 3450 50  0001 C CNN
+F 1 "GND" H 2355 3527 50  0000 C CNN
+F 2 "" H 2350 3700 50  0001 C CNN
+F 3 "" H 2350 3700 50  0001 C CNN
+	1    2350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 602DECDD
+P 2200 3700
+F 0 "#PWR0103" H 2200 3450 50  0001 C CNN
+F 1 "GND" H 2205 3527 50  0000 C CNN
+F 2 "" H 2200 3700 50  0001 C CNN
+F 3 "" H 2200 3700 50  0001 C CNN
+	1    2200 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3700 2350 3700
+Wire Wire Line
+	2450 3600 2200 3600
+Wire Wire Line
+	2200 3600 2200 3700
+Wire Wire Line
+	1750 3500 2400 3500
+Wire Wire Line
+	1750 3500 1750 3650
+$Comp
+L power:GND #PWR0104
+U 1 1 602DFA67
+P 1750 3950
+F 0 "#PWR0104" H 1750 3700 50  0001 C CNN
+F 1 "GND" H 1755 3777 50  0000 C CNN
+F 2 "" H 1750 3950 50  0001 C CNN
+F 3 "" H 1750 3950 50  0001 C CNN
+	1    1750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J1
+U 1 1 603918C2
+P 5650 2600
+F 0 "J1" H 5622 2578 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 5622 2623 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5650 2600 50  0001 C CNN
+F 3 "~" H 5650 2600 50  0001 C CNN
+	1    5650 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 2850 4500 2400
+Wire Wire Line
+	4500 2400 5450 2400
+Wire Wire Line
+	2400 2400 4500 2400
+Wire Wire Line
+	2400 2400 2400 3500
+Connection ~ 4500 2400
+Wire Wire Line
+	4850 3300 5250 3300
+Wire Wire Line
+	5250 3300 5250 2500
+Wire Wire Line
+	5250 2500 5450 2500
+Connection ~ 4850 3300
+Wire Wire Line
+	4850 3300 4850 4050
+Wire Wire Line
+	4500 3350 5300 3350
+Wire Wire Line
+	5300 3350 5300 2600
+Wire Wire Line
+	5300 2600 5450 2600
+Connection ~ 4500 3350
+Wire Wire Line
+	4500 3350 4500 3600
+Wire Wire Line
+	4150 3400 5350 3400
+Wire Wire Line
+	5350 3400 5350 2700
+Wire Wire Line
+	5350 2700 5450 2700
+Connection ~ 4150 3400
+Wire Wire Line
+	4150 3400 4150 3500
+$Comp
+L power:GND #PWR0120
+U 1 1 603AD332
+P 5450 2800
+F 0 "#PWR0120" H 5450 2550 50  0001 C CNN
+F 1 "GND" H 5455 2627 50  0000 C CNN
+F 2 "" H 5450 2800 50  0001 C CNN
+F 3 "" H 5450 2800 50  0001 C CNN
+	1    5450 2800
+	1    0    0    -1  
+$EndComp
+Text Notes 5650 2350 0    50   ~ 0
+VDD
+Text Notes 5650 2500 0    50   ~ 0
+SCL
+Text Notes 5550 2600 0    50   ~ 0
+SDA
+Text Notes 5600 2700 0    50   ~ 0
+INT
+Text Notes 5600 2800 0    50   ~ 0
+GND
+$EndSCHEMATC
